@@ -48,9 +48,3 @@ while (True):
     telemetryData = json.dumps({'accelX': accelX, 'accelY': accelY, 'accelZ': accelZ, 'temperature': temp})
     (rc, mid) = mqttc.publish("apex_mqtt", telemetryData, qos=2)
 
-#print("apex_mqtt")
-#(rc, mid) = mqttc.publish("apex_mqtt", "bar", qos=2)
-#print("class")
-#infot = mqttc.publish("class", "bar", qos=2)
-
-#infot.wait_for_publish()
